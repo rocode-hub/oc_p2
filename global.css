@@ -1,0 +1,38 @@
+body {
+  font-family: Raleway, Verdana, Geneva, Tahoma, sans-serif;
+  width: 1340px;
+  margin: 0 auto;
+  background-color: #FFF;
+  padding: 0 20px 20px 20px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  min-height: 110px;
+}
+
+.header-logo {
+  flex: 1;
+}
+
+.header-nav {
+  display: block;
+}
+
+.header-nav ul {
+  list-style-type: none;
+}
+
+.header-nav li {
+  float: left;
+}
+
+.header-nav a {
+  text-align: center;
+  margin: 0.25em;
+  padding: 0.25em;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  color: #555;
+}
