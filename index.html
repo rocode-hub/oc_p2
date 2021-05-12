@@ -1,176 +1,121 @@
 <!DOCTYPE html>
-<html lang="fr-FR">
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <meta name="author" content="ro2oc" />
+    <meta name="author" content="rocode" />
     <title>Reservia - Trouvez votre hébergement pour des vacances de rêves</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- link rel="stylesheet" href="./css/global.css" media="all" / -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/global.css" media="all" />
   </head>
   <body>
-    <!-- HEADER -->
-    <header>
-      <div id="header-nav">
-        <!-- logo -->
-        <a href="index.html">
+    <div class="page">
+      <!--  HEADER  -->
+      <header>
+        <!--  logo  -->
+        <a class="header-logo" href="index.html">
           <img src="./pic/logo/reservia.svg" alt="logo Reservia" />
         </a>
-        <!-- navigation bar -->
-        <nav>
-          <ul>
-            <li><a href="#hebergements">Hébergements</a></li>
+        <!--  navigation bar  -->
+        <nav class="header-nav">
+          <ul class="header-nav-links">
+            <li><a class="focus-link" href="#hebergements">Hébergements</a></li>
             <li><a href="#activites">Activités</a></li>
           </ul>
         </nav>
-        <!-- sign in -->
-        <div>S'inscrire</div>
-      </div>
-      <!-- title -->
-      <div id="header-title">
-        <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
-        <p>En plein centre ville ou en pleine nature</p>
-      </div>
-    </header>
-    <!-- MAIN CONTENT -->
-    <main>
-      <!-- search -->
-      <div id="search">
-        <form method="POST">
-          <span id="icon-localization">
-            <img src="./pic/icon/map-marker-alt-solid.svg" width="16" height="16" alt="icône localisation" />
-          </span>
-          <input type="text" placeholder="Marseille, France" autofocus />
-          <input type="submit" value="Rechercher" />
-        </form>
-      </div>
-      <!-- filters -->
-      <div id="filters">
-        <h3>Filtres</h3>
-        <span id="icon-cheap">
-          <img src="./pic/icon/money-bill-wave-solid.svg" width="16" height="16" alt="icône économique" />
-        </span>
-        <button type="button">Économique</button>
-        <span id="icon-family">
-          <img src="./pic/icon/child-solid.svg" width="16" height="16" alt="icône famille" />
-        </span>
-        <button type="button">Famille</button>
-        <span id="icon-romantic">
-          <img src="./pic/icon/heart-solid.svg" width="16" height="16" alt="icône romantique" />
-        </span>
-        <button type="button">Romantique</button>
-        <span id="icon-pets">
-          <img src="./pic/icon/dog-solid.svg" width="16" height="16" alt="icône animaux autorisés" />
-        </span>
-        <button type="button">Animaux autorisés</button>
-      </div>
-      <!-- filters results -->
-      <div id="filters-results">
-        <span id="icon-info">
-          <img src="./pic/icon/info-solid.svg" width="16" height="16" alt="icône info" />
-          Plus de 500 logements sont disponibles dans cette ville
-        </span>
-      </div>
-      <!-- hosts -->
-      <section id="hebergements">
-        <h2>Hébergements à Marseille</h2>
-        <!-- hosts results -->
-        <div id="hosts-results">
-          <article id="host1">
-            <img src="./pic/host/1aubergelacannebiere-WQJvWU_HZFo.jpg" width="100" alt="hébergement 1" />
-            <h3>Auberge de la Cannebière</h3>
-            <p>Nuit à partir de <strong>25€</strong></p>
-            <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
-            <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
-            <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
-            <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
-            <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
-          </article>
-          <article id="host2">
-            <img src="./pic/host/2hotelduport-gTbaxaVLvsg.jpg" width="100" alt="hébergement 2" />
-            <h3>Hôtel du port</h3>
-            <p>Nuit à partir de <strong>52€</strong></p>
-            <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
-            <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
-            <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
-            <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
-            <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
-          </article>
-          <article id="host3">
-            <img src="./pic/host/3hotellesmouettes-B8WIgxA_PFU.jpg" width="100" alt="hébergement 3" />
-            <h3>Hôtel Les mouettes</h3>
-            <p>Nuit à partir de <strong>76€</strong></p>
-            <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
-            <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
-            <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
-            <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
-            <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
-          </article>
-          <article id="host4">
-            <img src="./pic/host/4hoteldelamer-Eg1qcIitAuA.jpg" width="100" alt="hébergement 4" />
-            <h3>Hôtel de la mer</h3>
-            <p>Nuit à partir de <strong>46€</strong></p>
-            <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
-            <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
-            <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
-            <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
-            <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
-          </article>
-          <article id="host5">
-            <img src="./pic/host/5aubergelepanier-kT-ZyaiwBe0.jpg" width="100" alt="hébergement 5" />
-            <h3>Auberge Le Panier</h3>
-            <p>Nuit à partir de <strong>23€</strong></p>
-            <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
-            <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
-            <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
-            <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
-            <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
-          </article>
-          <article id="host6">
-            <img src="./pic/host/6hotelchezamina-M6S1WvfW68A.jpg" width="100" alt="hébergement 6" />
-            <h3>Hôtel chez Amina</h3>
-            <p>Nuit à partir de <strong>96€</strong></p>
-            <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
-            <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
-            <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
-            <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
-            <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
-          </article>
-        </div>
-        <h3>Afficher plus</h3>
-        <!-- hosts popular -->
-        <aside>
-          <div id="aside-title">
-            <h2>Les plus populaires</h2>
-            <img src="./pic/icon/chart-line-solid.svg" width="16" height="16" alt="icône étoile classement" />
+        <a class="header-signup" href="">S'inscrire</a>
+      </header>
+      <!--  MAIN CONTENT  -->
+      <main>
+        <!-- title search filters -->
+        <section class="search-filters">
+          <div class="page-title">
+            <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+            <p>En plein centre ville ou en pleine nature</p>
           </div>
+          <!--  search  -->
+          <div class="search">
+            <form method="POST">
+              <span class="search-icon">
+                <img src="./pic/icon/map-marker-alt-solid.svg" width="16px" height="16px" alt="icône localisation" />
+              </span>
+              <input class="search-input" type="text" placeholder="Marseille, France" />
+              <input class="search-button" type="submit" value="Rechercher" />
+            </form>
+          </div>
+          <!--  filters  -->
+          <div class="filters">
+            <h3>Filtres</h3>
+            <button class="filter-button" type="button"><img src="./pic/icon/money-bill-wave-solid.svg" width="16" height="16" alt="icône économique" /><span>Économique</span></button>
+            <button class="filter-button" type="button"><img src="./pic/icon/child-solid.svg" width="16" height="16" alt="icône famille" /><span>Familial</span></button>
+            <button class="filter-button" type="button"><img src="./pic/icon/heart-solid.svg" width="16" height="16" alt="icône romantique" /><span>Romantique</span></button>
+            <button class="filter-button" type="button"><img src="./pic/icon/dog-solid.svg" width="16" height="16" alt="icône animaux autorisés" /><span>Animaux autorisés</span></button>
+          </div>
+          <div class="filters-results">
+            <span id="icon-info">
+              <img src="./pic/icon/info-solid.svg" width="16" height="16" alt="icône info" />
+              Plus de 500 logements sont disponibles dans cette ville
+            </span>
+          </div>
+        </section>
+        <!-- hosts -->
+        <section id="hebergements">
+          <h2>Hébergements à Marseille</h2>
           <!-- hosts results -->
-          <div id="hosts-most-popular">
-            <article id="pop1">
-              <img src="./pic/hostp/1hotellesoleil-Bj_rcSC5XfE.jpg" width="100" alt="hébergement populaire 1" />
-              <h3>Hôtel Le soleil du matin</h3>
-              <p>Nuit à partir de <strong>128€</strong></p>
+          <div id="hosts-results">
+            <article id="host1">
+              <img src="./pic/host/1aubergelacannebiere-WQJvWU_HZFo.jpg" width="100" alt="hébergement 1" />
+              <h3>Auberge de la Cannebière</h3>
+              <p>Nuit à partir de <strong>25€</strong></p>
               <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
               <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
               <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
               <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
               <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
             </article>
-            <article id="pop2">
-              <img src="./pic/hostp/2aucoeurdeleau-VGs8z60yT2c.jpg" width="100" alt="hébergement populaire 2" />
-              <h3>Au coeur de l'eau<br />Chambres d'hôtes</h3>
-              <p>Nuit à partir de <strong>71€</strong></p>
+            <article id="host2">
+              <img src="./pic/host/2hotelduport-gTbaxaVLvsg.jpg" width="100" alt="hébergement 2" />
+              <h3>Hôtel du port</h3>
+              <p>Nuit à partir de <strong>52€</strong></p>
               <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
               <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
               <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
               <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
               <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
             </article>
-            <article id="pop3">
-              <img src="./pic/hostp/3hoteltoutbleu-sjvU0THccQA.jpg" width="100" alt="hébergement populaire 3" />
-              <h3>Hôtel Tout bleu et Blanc</h3>
-              <p>Nuit à partir de <strong>68€</strong></p>
+            <article id="host3">
+              <img src="./pic/host/3hotellesmouettes-B8WIgxA_PFU.jpg" width="100" alt="hébergement 3" />
+              <h3>Hôtel Les mouettes</h3>
+              <p>Nuit à partir de <strong>76€</strong></p>
+              <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
+              <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
+              <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
+              <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
+              <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
+            </article>
+            <article id="host4">
+              <img src="./pic/host/4hoteldelamer-Eg1qcIitAuA.jpg" width="100" alt="hébergement 4" />
+              <h3>Hôtel de la mer</h3>
+              <p>Nuit à partir de <strong>46€</strong></p>
+              <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
+              <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
+              <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
+              <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
+              <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
+            </article>
+            <article id="host5">
+              <img src="./pic/host/5aubergelepanier-kT-ZyaiwBe0.jpg" width="100" alt="hébergement 5" />
+              <h3>Auberge Le Panier</h3>
+              <p>Nuit à partir de <strong>23€</strong></p>
+              <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
+              <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
+              <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
+              <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
+              <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
+            </article>
+            <article id="host6">
+              <img src="./pic/host/6hotelchezamina-M6S1WvfW68A.jpg" width="100" alt="hébergement 6" />
+              <h3>Hôtel chez Amina</h3>
+              <p>Nuit à partir de <strong>96€</strong></p>
               <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
               <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
               <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
@@ -178,57 +123,98 @@
               <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
             </article>
           </div>
-        </aside>
-      </section>
-      <!-- activities -->
-      <section id="activites">
-        <h2>Activités à Marseille</h2>
-        <div id="activities-results">
-          <article id="ac-result1">
-            <img src="./pic/activ/1vieuxport-QUgJhdY5Fyk.jpg" width="100" alt="activités 1" />
-            <h3>Vieux Port</h3>
-          </article>
-          <article id="ac-result2">
-            <img src="./pic/activ/2fortdepomegues-QFTrLdQIRhI.jpg" width="100" alt="activités 2" />
-            <h3>Fort de Pomègues</h3>
-          </article>
-          <article id="ac-result3">
-            <img src="./pic/activ/3ilesdufrioul-rV_Qd1l-VXg.jpg" width="100" alt="activités 3" />
-            <h3>Îles du Frioul</h3>
-          </article>
-          <article id="ac-result4">
-            <img src="./pic/activ/4parccalanques-NR8-cBCN3aI.jpg" width="100" alt="activités 4" />
-            <h3>Parc National des Calanques</h3>
-          </article>
-          <article id="ac-result5">
-            <img src="./pic/activ/5notredamedelagarde-xW9e8gdotxI.jpg" width="100" alt="activités 5" />
-            <h3>Notre-dame-de-la-Garde</h3>
-          </article>
-          <article id="ac-result6">
-            <img src="./pic/activ/6parclongchamps-wH2-EJoDcV0.jpg" width="100" alt="activités 6" />
-            <h3>Parc Longchamp</h3>
-          </article>
+          <h3>Afficher plus</h3>
+          <!-- hosts popular -->
+          <aside>
+            <div id="aside-title">
+              <h2>Les plus populaires</h2>
+              <img src="./pic/icon/chart-line-solid.svg" width="16" height="16" alt="icône étoile classement" />
+            </div>
+            <!-- hosts results -->
+            <div id="hosts-most-popular">
+              <article id="pop1">
+                <img src="./pic/hostp/1hotellesoleil-Bj_rcSC5XfE.jpg" width="100" alt="hébergement populaire 1" />
+                <h3>Hôtel Le soleil du matin</h3>
+                <p>Nuit à partir de <strong>128€</strong></p>
+                <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
+                <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
+                <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
+                <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
+                <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
+              </article>
+              <article id="pop2">
+                <img src="./pic/hostp/2aucoeurdeleau-VGs8z60yT2c.jpg" width="100" alt="hébergement populaire 2" />
+                <h3>Au coeur de l'eau<br />Chambres d'hôtes</h3>
+                <p>Nuit à partir de <strong>71€</strong></p>
+                <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
+                <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
+                <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
+                <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
+                <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
+              </article>
+              <article id="pop3">
+                <img src="./pic/hostp/3hoteltoutbleu-sjvU0THccQA.jpg" width="100" alt="hébergement populaire 3" />
+                <h3>Hôtel Tout bleu et Blanc</h3>
+                <p>Nuit à partir de <strong>68€</strong></p>
+                <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
+                <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
+                <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
+                <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
+                <img src="./pic/icon/star-solid.svg" width="16" height="16" alt="icône étoile classement" />
+              </article>
+            </div>
+          </aside>
+        </section>
+        <!-- activities -->
+        <section id="activites">
+          <h2>Activités à Marseille</h2>
+          <div id="activities-results">
+            <article id="ac-result1">
+              <img src="./pic/activ/1vieuxport-QUgJhdY5Fyk.jpg" width="100" alt="activités 1" />
+              <h3>Vieux Port</h3>
+            </article>
+            <article id="ac-result2">
+              <img src="./pic/activ/2fortdepomegues-QFTrLdQIRhI.jpg" width="100" alt="activités 2" />
+              <h3>Fort de Pomègues</h3>
+            </article>
+            <article id="ac-result3">
+              <img src="./pic/activ/3ilesdufrioul-rV_Qd1l-VXg.jpg" width="100" alt="activités 3" />
+              <h3>Îles du Frioul</h3>
+            </article>
+            <article id="ac-result4">
+              <img src="./pic/activ/4parccalanques-NR8-cBCN3aI.jpg" width="100" alt="activités 4" />
+              <h3>Parc National des Calanques</h3>
+            </article>
+            <article id="ac-result5">
+              <img src="./pic/activ/5notredamedelagarde-xW9e8gdotxI.jpg" width="100" alt="activités 5" />
+              <h3>Notre-dame-de-la-Garde</h3>
+            </article>
+            <article id="ac-result6">
+              <img src="./pic/activ/6parclongchamps-wH2-EJoDcV0.jpg" width="100" alt="activités 6" />
+              <h3>Parc Longchamp</h3>
+            </article>
+          </div>
+        </section>
+      </main>
+      <!-- PIED DE PAGE -->
+      <footer>
+        <div>
+          <h3>A propos</h3>
+          <a href="#">Fonctionnement du site</a>
+          <a href="#">Conditions générales de vente</a>
+          <a href="#">Données et confidentialité</a>
         </div>
-      </section>
-    </main>
-    <!-- PIED DE PAGE -->
-    <footer>
-      <div>
-        <h3>A propos</h3>
-        <a href="#">Fonctionnement du site</a>
-        <a href="#">Conditions générales de vente</a>
-        <a href="#">Données et confidentialité</a>
-      </div>
-      <div>
-        <h3>Nos hébergements</h3>
-        <a href="#">Charte qualité</a>
-        <a href="#">Soumettre votre hôtel</a>
-      </div>
-      <div>
-        <h3>Assistance</h3>
-        <a href="#">Centre d'aide</a>
-        <a href="#">Nous contacter</a>
-      </div>
-    </footer>
+        <div>
+          <h3>Nos hébergements</h3>
+          <a href="#">Charte qualité</a>
+          <a href="#">Soumettre votre hôtel</a>
+        </div>
+        <div>
+          <h3>Assistance</h3>
+          <a href="#">Centre d'aide</a>
+          <a href="#">Nous contacter</a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
