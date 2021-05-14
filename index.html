@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="author" content="rocode" />
-    <title>Reservia - Trouvez votre hébergement pour des vacances de rêves</title>
+    <title>Reservia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/global.css" media="all" />
   </head>
   <body>
     <div class="page">
+      <h1>Trouver votre hébergement pour des vacances de rêve</h1>
       <!--  HEADER  -->
       <header>
         <!--  logo  -->
@@ -29,32 +30,42 @@
         <!-- title search filters -->
         <section class="search-filters">
           <div class="page-title">
-            <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+            <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
             <p>En plein centre ville ou en pleine nature</p>
           </div>
           <!--  search  -->
           <div class="search">
             <form method="POST">
-              <span class="search-icon">
-                <img src="./pic/icon/map-marker-alt-solid.svg" width="16px" height="16px" alt="icône localisation" />
-              </span>
+              <div class="search-icon">
+                <img src="./pic/icon/map-marker-alt-solid.svg" alt="icône localisation" />
+              </div>
               <input class="search-input" type="text" placeholder="Marseille, France" />
               <input class="search-button" type="submit" value="Rechercher" />
             </form>
           </div>
           <!--  filters  -->
-          <div class="filters">
+          <div class="filter">
             <h3>Filtres</h3>
-            <button class="filter-button" type="button"><img src="./pic/icon/money-bill-wave-solid.svg" width="16" height="16" alt="icône économique" /><span>Économique</span></button>
-            <button class="filter-button" type="button"><img src="./pic/icon/child-solid.svg" width="16" height="16" alt="icône famille" /><span>Familial</span></button>
-            <button class="filter-button" type="button"><img src="./pic/icon/heart-solid.svg" width="16" height="16" alt="icône romantique" /><span>Romantique</span></button>
-            <button class="filter-button" type="button"><img src="./pic/icon/dog-solid.svg" width="16" height="16" alt="icône animaux autorisés" /><span>Animaux autorisés</span></button>
+            <button class="filter-button" type="button">
+              <div class="filter-badge"><img src="./pic/icon/money-bill-wave-solid.svg" alt="icône économique" /></div>
+              <span>Économique</span>
+            </button>
+            <button class="filter-button" type="button">
+              <div class="filter-badge"><img src="./pic/icon/child-solid.svg" alt="icône famille" /></div>
+              <span>Familial</span>
+            </button>
+            <button class="filter-button" type="button">
+              <div class="filter-badge"><img src="./pic/icon/heart-solid.svg" alt="icône romantique" /></div>
+              <span>Romantique</span>
+            </button>
+            <button class="filter-button" type="button">
+              <div class="filter-badge"><img src="./pic/icon/dog-solid.svg" alt="icône animaux autorisés" /></div>
+              <span>Animaux autorisés</span>
+            </button>
           </div>
-          <div class="filters-results">
-            <span id="icon-info">
-              <img src="./pic/icon/info-solid.svg" width="16" height="16" alt="icône info" />
-              Plus de 500 logements sont disponibles dans cette ville
-            </span>
+          <div class="filter-results">
+            <div class="filter-back-info"><img src="./pic/icon/info-solid.svg" alt="icône info" /></div>
+            <span>Plus de 500 logements sont disponibles dans cette ville</span>
           </div>
         </section>
         <!-- hosts -->
