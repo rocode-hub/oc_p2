@@ -86,12 +86,12 @@ footer {
   min-height:100vh;
 }
 
-      #wrapper > * > .inner {
-        width: 100%;
-        max-width: 1380px;
-        margin: 0 auto;
-        padding: 0 20px
-      }
+.inner {
+  width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 20px
+}
 
 .flex-row {
   display: flex;
@@ -112,31 +112,28 @@ footer {
 /*  header                                                                                               */
 /*  ---------------------------------------------------------------------------------------------------  */
 
-.head-inner {
-  max-width: 1380px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 20px
-}
-
 .head-flex {
-  margin-bottom: 0.8rem;
+  align-items: flex-end;
+  margin-bottom: 0.8rem
 }
 
 .head-logo {
-  display: inline-flex;
-  align-items: flex-end;
   flex: 1
 }
 
 #head-nav ul {
   text-align: center;
-  display: flex;
+  display: flex
 }
 
 #head-nav li {
+  width: 8rem;
   cursor: pointer
 }
+
+      #head-nav li:first-child {
+        width: 12.4rem
+      }
 
 #head-nav a {
   display: block;
@@ -147,12 +144,7 @@ footer {
 }
 
       #head-nav a:hover {
-        color: var(--bluedark);
-        border-top: 3px solid var(--bluedark);
-        border-bottom: 3px solid transparent
-      }
-
-      #head-nav a.head-nav-focus {
+        font-weight: bold;
         color: var(--bluedark);
         border-top: 3px solid var(--bluedark);
         border-bottom: 3px solid transparent
@@ -160,9 +152,7 @@ footer {
 
       #head-nav a.head-nav-signup {
         font-weight: bold;
-        color: var(--bluedark);
-        border-top: 3px solid transparent;
-        border-bottom: 3px solid transparent
+        color: var(--bluedark)
       }
 
 /*  ---------------------------------------------------------------------------------------------------  */
@@ -313,7 +303,7 @@ footer {
   height: 28rem;
   box-shadow: 0px 2px 10px -2px rgba( 0, 0, 0, 0.2);
   border-radius: 1rem;
-  justify-content: : center
+  justify-content: center
 }
 
 .activ-tall img {
@@ -363,7 +353,7 @@ footer {
 /* ---------------------------------------------------------------------------------------------------- */
 @media (max-width: 800px) {
 
-      #wrapper header .inner {
+      header.inner {
         padding: 0
       }
 
@@ -387,8 +377,8 @@ footer {
 
       #head-nav li:last-child {
         position: absolute;
-        top: 0.25rem;
-        right: 20px;
+        top: 0rem;
+        right: 0px;
         padding: 0;
         cursor: auto
       }
@@ -406,18 +396,16 @@ footer {
         border-bottom: 3px solid var(--bluedark)
       }
 
-      #head-nav a.head-nav-focus {
-        color: var(--bluedark);
-        border-top: 3px solid transparent;
-        border-bottom: 3px solid var(--bluedark)
-      }
-
       #head-nav a.head-nav-signup {
-        margin: 2rem 20px 1rem 1rem;
-        padding: 0;
+        padding: 2rem 20px 1rem 1rem;
         border-top: 3px solid transparent;
         border-bottom: 3px solid transparent
      }
+
+      #head-nav a.head-nav-signup:hover {
+        border-top: 3px solid var(--bluedark);
+        border-bottom: 3px solid transparent
+      }
 
       .search {
         margin: 1rem 0
