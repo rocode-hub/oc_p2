@@ -1,4 +1,4 @@
-/*  ---------------------------------------------------------------------------------------------------  */
+﻿/*  ---------------------------------------------------------------------------------------------------  */
 /*  Reservia css global                                                                                  */
 /*  ---------------------------------------------------------------------------------------------------  */
 
@@ -106,6 +106,11 @@ footer {
 .flex-col {
   display: flex;
   flex-direction: column
+}
+
+.flex-col-wrap {
+  display: flex;
+  flex-flow: column wrap
 }
 
 /*  ---------------------------------------------------------------------------------------------------  */
@@ -298,25 +303,74 @@ footer {
   line-height: 5rem
 }
 
-.activ-tall {
-  width: 19rem;
-  height: 28rem;
+.activ-section-box {
+  height: 27.9rem;
+  justify-content: space-between;
+  align-content: space-between
+}
+
+.activ-box {
+  width: 22.4%;
   box-shadow: 0px 2px 10px -2px rgba( 0, 0, 0, 0.2);
-  border-radius: 1rem;
-  justify-content: center
+  border-radius: 1rem
 }
 
-.activ-tall img {
-  width: 100%;
-  height: 88%;
-  border-radius: 1rem 1rem 0 0
+      .activ-box:hover {
+        box-shadow: 0px 2px 10px -2px rgba( 0, 0, 0, 0.4);
+        cursor: pointer
+      }
+
+      .activ-box img {
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 1rem 1rem 0 0
+      }
+
+      .activ-box figcaption {
+        padding: 1rem 1rem 0 1rem
+      }
+
+.activ-box-size5 {
+  height: 27.9rem
 }
 
-.activ-tall figcaption {
-  height: 12%;
-  padding-left: 1rem;
-  padding-top: 0.9rem
+      .activ-box-size5 img {
+        height: 87.4%
+      }
+
+.activ-box-size4 {
+  height: 14.8rem
 }
+
+      .activ-box-size4 img {
+        height: 76.2%;
+        object-position: center
+      }
+
+.activ-box-size3 {
+  height: 13.085rem
+}
+
+      .activ-box-size3 img {
+        height: 73.5%
+      }
+
+.activ-box-size2 {
+  height: 12.21rem
+}
+
+      .activ-box-size2 img {
+        height: 71.6%
+      }
+
+.activ-box-size1 {
+  height: 10.3rem
+}
+
+      .activ-box-size1 img {
+        height: 66.2%
+      }
 
 /* ---------------------------------------------------------------------------------------------------- */
 /* footer
@@ -343,14 +397,28 @@ footer {
 /* ---------------------------------------------------------------------------------------------------- */
 /* tablet                                                                                               */
 /* ---------------------------------------------------------------------------------------------------- */
+
 @media (max-width: 1200px) {
 
+      .activ-box {
+        width: 48%;
+        height: 20rem
+      }
+
+            .activ-box img {
+              height: 82.5%
+            }
+
+      .activ-section-box {
+        height: 64rem;
+      }
 
 }
 
 /* ---------------------------------------------------------------------------------------------------- */
 /* phone                                                                                               */
 /* ---------------------------------------------------------------------------------------------------- */
+
 @media (max-width: 800px) {
 
       header.inner {
@@ -439,4 +507,19 @@ footer {
       .filter-badge {
         margin-right: 0.6rem
       }
+
+      .activ-box {
+        height: 12.4rem;
+        width: 100%
+      }
+
+            .activ-box img {
+              object-position: center;
+              height: 72%
+            }
+
+      .activ-section-box {
+        height: 82rem
+      }
+
 }
