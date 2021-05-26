@@ -294,7 +294,7 @@ footer {
 /*  activities                                                                                           */
 /*  ---------------------------------------------------------------------------------------------------  */
 
-#activ-section {
+.activ-section {
   margin-top: 1rem;
   margin-bottom: 4rem;
 }
