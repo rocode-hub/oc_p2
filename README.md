@@ -1,2 +1,3 @@
-# PROJET 2 - OPENCLASSROOM DEV WEB FORMATION
-OpenClassrooms - Project 2 - Reservia web site
+# PROJET 2 - OPENCLASSROOMS DEV WEB FORMATION
+## Transformez une maquette en site web
+### Reservia web site
