@@ -1,2 +1,2 @@
-# ro_2_22042021
+# PROJET 2 - OPENCLASSROOM DEV WEB FORMATION
 OpenClassrooms - Project 2 - Reservia web site
